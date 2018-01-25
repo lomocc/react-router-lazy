@@ -6,13 +6,10 @@
  * <Route path="/about" getComponent={lazy(()=>import('./modules/ModuleA'))}/>
  *
  */
-
 module.exports = function (promiseFactory) {
   return function (location, callback) {
-    return promiseFactory().then(function (cb) {
-      return cb(function (component) {
-        return callback(null, component.default || component);
-      });
+    promiseFactory().then(function (component) {
+      callback(null, component.default || component);
     });
   };
 };
