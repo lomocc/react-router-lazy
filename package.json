@@ -1,0 +1,11 @@
+{
+  "name": "react-router-lazy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "vincent",
+  "license": "ISC",
+  "dependencies": {
+  }
+}
